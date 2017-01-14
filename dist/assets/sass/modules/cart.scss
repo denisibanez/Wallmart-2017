@@ -1,0 +1,124 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+@import "../utilities/_placeholder";
+@import "../utilities/_button";
+
+section {
+  .cart-top {
+    background-color: $white;
+    margin-bottom: 10px;
+
+    .cart-top--title {
+      @extend %padding-sm;
+      font-weight: bold;
+      font-size:$font-lg;
+    }
+
+    .cart-top--button {
+      @extend %padding-sm;
+
+      .btn-buy {
+        @extend %button-buy;
+        padding: 10px 25px;
+      }
+    }
+  }
+
+  .list-product {
+    @extend %margin-block--mobile;
+
+    .table-responsive {
+      border: 1px solid $blue-header;
+      margin-top: $space-sm;
+
+      .table {
+        margin-bottom: 0;
+
+        .table-caption {
+          background-color: $blue-header;
+          color: $white;
+          font-weight: bold;
+          font-size:$font-md;
+          text-align: center;
+
+          td {
+
+            &:first-child {
+              text-align: left;
+            }
+          }
+        }
+
+        .thumb {
+          width: 60px;
+          @extend %margin-xs;
+        }
+
+        tr {
+          border-bottom: 1px solid $blue-header;
+
+          &:last-child {
+            border-bottom: 0;
+          }
+
+          td {
+            vertical-align: middle;
+            border: 0;
+
+            .table-responsive--text {
+              color:$blue-header;
+              font-size: $font-lg;
+            }
+
+            p {
+              text-align: center;
+              & a {
+                @extend %link;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .freight {
+    @extend %margin-block--mobile;
+
+    .freight-box {
+      margin: $space-sm 0;
+
+      .freight-box--text {
+        font-size: $font-md;
+      }
+
+      .freight-search {
+        padding: $space-sm 0;
+
+        input {
+          border: 1px solid $blue-header;
+          height: $space-lg;
+          border-radius: 0;
+        }
+
+        a {
+          @extend %link;
+        }
+      }
+
+      .freight-notification {
+        font-size: $font-md;
+      }
+    }
+  }
+
+  .finish {
+    @extend %margin-block--mobile;
+
+    .finish-box {
+      .btn-buy {
+        @extend %btn-buy;
+      }
+    }
+  }
+}

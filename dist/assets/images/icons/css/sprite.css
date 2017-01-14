@@ -1,0 +1,47 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 51.2em 153.6em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+
+
+  .icon.facebook-logo:before {
+      background-position: 0em 0em;
+      width: 51.2em;
+      height: 51.2em;
+  }
+
+
+
+
+  .icon.google-logo:before {
+      background-position: 0em -51.2em;
+      width: 51.2em;
+      height: 51.2em;
+  }
+
+
+
+
+  .icon.twitter-logo:before {
+      background-position: 0em -102.4em;
+      width: 51.2em;
+      height: 51.2em;
+  }
+
+
+
+
+

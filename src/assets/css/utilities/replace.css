@@ -1,0 +1,33 @@
+.navbar {
+  margin-bottom: 0; }
+
+.navbar-brand {
+  height: 70px; }
+
+.navbar-toggle {
+  margin-top: 15px; }
+
+.navbar-default {
+  background-color: #1a75ce;
+  border-color: #1a75ce; }
+
+.navbar-default .navbar-nav {
+  margin: 0 -15px; }
+  .navbar-default .navbar-nav > .active > a {
+    background-color: #195d9e;
+    color: #ffffff; }
+  .navbar-default .navbar-nav li > a {
+    color: #ffffff; }
+
+.navbar-default .navbar-toggle {
+  border-color: #1a75ce; }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff; }
+
+.navbar-default .navbar-form, .navbar-default .navbar-collapse {
+  border-color: transparent; }
+
+.nav > li {
+  background-color: #195d9e; }

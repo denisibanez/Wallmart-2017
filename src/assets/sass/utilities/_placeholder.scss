@@ -1,0 +1,25 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+
+%padding-sm {
+  padding: $space-sm $space-sm;
+}
+
+%margin-xs {
+  margin: $space-xs $space-xs;
+}
+
+%margin-sm {
+  margin: $space-sm $space-sm;
+}
+
+%margin-block--mobile {
+  background-color: $white;
+  margin: 25px 0px 25px 0px;
+}
+
+%link {
+  font-size: $font-md;
+  color:$blue-header;
+  text-decoration: underline;
+}

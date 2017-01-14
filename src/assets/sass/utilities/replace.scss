@@ -1,0 +1,54 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  height: 70px;
+}
+
+.navbar-toggle {
+  margin-top:$space-sm;
+}
+
+.navbar-default {
+  background-color: $blue-header;
+  border-color: $blue-header;
+}
+
+.navbar-default {
+  .navbar-nav {
+    margin: 0 -15px;
+
+    &>.active>a {
+      background-color: $blue-dark;
+      color: $white;
+    }
+
+    li {
+      &>a {
+        color:$white;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: $blue-header;
+    &:focus, &:hover {
+      background-color: transparent;
+    }
+    .icon-bar {
+      background-color:$white;
+    }
+  }
+
+  .navbar-form, .navbar-collapse {
+    border-color: transparent;
+  }
+}
+
+.nav>li {
+  background-color: $blue-dark;
+}

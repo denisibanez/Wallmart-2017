@@ -1,0 +1,12 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+
+.btn {
+  border-radius: 0;
+  color:$white;
+}
+
+%button-buy {
+  background-color: $green-buy;
+  border-bottom:3px solid $green-dark;
+}
