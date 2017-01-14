@@ -52,3 +52,7 @@
 .nav>li {
   background-color: $blue-dark;
 }
+
+.table>tbody>tr>td {
+  border-top: 0;
+}

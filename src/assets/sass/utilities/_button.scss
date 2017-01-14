@@ -6,7 +6,8 @@
   color:$white;
 }
 
-%button-buy {
+@mixin button-buy($pdd-1:10px, $pdd-2:25px) {
   background-color: $green-buy;
   border-bottom:3px solid $green-dark;
+  padding:$pdd-1 $pdd-2;
 }

@@ -1,0 +1,125 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+//tablet
+
+@media (min-width: 768px) {
+  header {
+    background-color: $blue-header;
+    height: 200px;
+    padding:$space-md $space-sm;
+
+    .visitor {
+      p {
+        color: $white;
+
+        a {
+          color:$white;
+          font-size: 1.2rem;
+        }
+      }
+
+      .cart-icon {
+        position: relative;
+
+        a {
+          .cart-icon--notification {
+            background-color: $green-buy;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            color: $white;
+            position: absolute;
+            right: 15px;
+            padding:2px 8px;
+            font-size: $font-md;
+            /* this section calls the dropHeader animation we defined above */
+            animation-name: zoom;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            animation-duration: 0.2s;
+            z-index:100;
+          }
+          @keyframes zoom {
+            0% {
+              transform: scale(0);
+            }
+            100% {
+              transform: scale(100%);
+            }
+          }
+        }
+      }
+
+      .cart {
+        position: relative;
+        right: $space-md;
+        float: right;
+      }
+    }
+
+    .navbar-form {
+      width: 100%;
+
+      .search-content {
+        input {
+          width: 100%;
+          height: 40px;
+        }
+
+        button {
+          top: 0;
+          right: 0;
+          position: absolute;
+          height: 85%;
+          font-size: $space-sm;
+          width: 3.3em;
+          border-radius: 3px;
+          margin:3px 18px;
+          background-color: $blue-header;
+          color: $white;
+          border: 0;
+        }
+      }
+    }
+
+    .navbar-brand>img {
+      margin: 0 $space-md;
+    }
+  }
+
+  section {
+    .cart-top, .list-product, .freight, .finish  {
+      margin-bottom: 0;
+      padding: $space-sm;
+    }
+
+    .list-product, .freight, .checkout, .finish {
+      margin: 0 -15px;
+    }
+
+    .bg-section {
+      background-color: $white;
+
+      .freight {
+        .freight-box  {
+          border: 1px solid $gray-border;
+          margin: 0 0 0 $space-sm ;
+          padding: 20px;
+
+          .freight-search {
+            input {
+              height: 40px;
+            }
+          }
+        }
+      }
+
+      .checkout {
+        .checkout-box {
+          margin: $space-sm $space-md 0 0 ;
+          background-color: $gray-content;
+        }
+      }
+    }
+  }
+}

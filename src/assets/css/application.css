@@ -1,26 +1,3 @@
-section .cart-top .cart-top--title, section .cart-top .cart-top--button {
-  padding: 15px 15px; }
-
-section .list-product .table-responsive .table .thumb {
-  margin: 5px 5px; }
-
-section .list-product, section .freight {
-  background-color: #ffffff;
-  margin: 25px 0px 25px 0px; }
-
-section .list-product .table-responsive .table tr td p a, section .freight .freight-box .freight-search a {
-  font-size: 1.5rem;
-  color: #1a75ce;
-  text-decoration: underline; }
-
-.btn {
-  border-radius: 0;
-  color: #ffffff; }
-
-section .cart-top .cart-top--button .btn-buy, section .finish .finish-box .btn-buy {
-  background-color: #40cd28;
-  border-bottom: 3px solid #37af22; }
-
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -47,7 +24,8 @@ html {
  */
 body {
   margin: 0;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #666; }
 
 /**
  * Add the correct display in IE 9-.
@@ -420,6 +398,25 @@ template {
 [hidden] {
   display: none; }
 
+section .cart-top .cart-top--title, section .cart-top .cart-top--button, section .freight .freight-box, section .checkout .checkout-box {
+  padding: 15px 15px; }
+
+section .list-product .table-responsive .table .thumb {
+  margin: 5px 5px; }
+
+section .list-product, section .freight, section .checkout {
+  background-color: #ffffff;
+  margin: 15px 0; }
+
+section .list-product .table-responsive .table tr td p a, section .freight .freight-box .freight-search a, section .checkout .checkout-box .checkout-box--info a {
+  font-size: 1.5rem;
+  color: #1a75ce;
+  text-decoration: underline; }
+
+.btn {
+  border-radius: 0;
+  color: #ffffff; }
+
 .navbar {
   margin-bottom: 0; }
 
@@ -454,20 +451,23 @@ template {
 .nav > li {
   background-color: #195d9e; }
 
+.table > tbody > tr > td {
+  border-top: 0; }
+
 main {
   background-color: #f2f2f2; }
 
-section .cart-top .cart-top--title, section .cart-top .cart-top--button {
+section .cart-top .cart-top--title, section .cart-top .cart-top--button, section .freight .freight-box, section .checkout .checkout-box {
   padding: 15px 15px; }
 
 section .list-product .table-responsive .table .thumb {
   margin: 5px 5px; }
 
-section .list-product, section .freight {
+section .list-product, section .freight, section .checkout {
   background-color: #ffffff;
-  margin: 25px 0px 25px 0px; }
+  margin: 15px 0; }
 
-section .list-product .table-responsive .table tr td p a, section .freight .freight-box .freight-search a {
+section .list-product .table-responsive .table tr td p a, section .freight .freight-box .freight-search a, section .checkout .checkout-box .checkout-box--info a {
   font-size: 1.5rem;
   color: #1a75ce;
   text-decoration: underline; }
@@ -476,17 +476,15 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
   border-radius: 0;
   color: #ffffff; }
 
-section .cart-top .cart-top--button .btn-buy, section .finish .finish-box .btn-buy {
-  background-color: #40cd28;
-  border-bottom: 3px solid #37af22; }
-
 section .cart-top {
   background-color: #ffffff;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
   section .cart-top .cart-top--title {
     font-weight: bold;
     font-size: 2rem; }
   section .cart-top .cart-top--button .btn-buy {
+    background-color: #40cd28;
+    border-bottom: 3px solid #37af22;
     padding: 10px 25px; }
 
 section .list-product .table-responsive {
@@ -517,23 +515,102 @@ section .list-product .table-responsive {
         section .list-product .table-responsive .table tr td p {
           text-align: center; }
 
-section .freight .freight-box {
-  margin: 15px 0; }
-  section .freight .freight-box .freight-box--text {
-    font-size: 1.5rem; }
-  section .freight .freight-box .freight-search {
-    padding: 15px 0; }
-    section .freight .freight-box .freight-search input {
-      border: 1px solid #1a75ce;
-      height: 50px;
-      border-radius: 0; }
-  section .freight .freight-box .freight-notification {
-    font-size: 1.5rem; }
+section .freight .freight-box .freight-box--text {
+  font-size: 1.5rem; }
+
+section .freight .freight-box .freight-search {
+  padding: 15px 0; }
+  section .freight .freight-box .freight-search input {
+    border: 1px solid #1a75ce;
+    height: 50px;
+    border-radius: 0; }
+
+section .freight .freight-box .freight-notification {
+  font-size: 1.5rem; }
+
+section .checkout .checkout-box tfoot {
+  color: #1a75ce; }
 
 section .finish {
   margin-top: 20px;
   background-color: #ffffff; }
   section .finish .finish-box {
-    margin: 30px 0; }
+    padding: 15px 0; }
     section .finish .finish-box .btn-buy {
+      background-color: #40cd28;
+      border-bottom: 3px solid #37af22;
+      padding: 10px 25px;
       width: 100%; }
+
+@media (min-width: 768px) {
+  header {
+    background-color: #1a75ce;
+    height: 200px;
+    padding: 30px 15px; }
+    header .visitor p {
+      color: #ffffff; }
+      header .visitor p a {
+        color: #ffffff;
+        font-size: 1.2rem; }
+    header .visitor .cart-icon {
+      position: relative; }
+      header .visitor .cart-icon a .cart-icon--notification {
+        background-color: #40cd28;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        color: #ffffff;
+        position: absolute;
+        right: 15px;
+        padding: 2px 8px;
+        font-size: 1.5rem;
+        /* this section calls the dropHeader animation we defined above */
+        animation-name: zoom;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+        animation-duration: 0.2s;
+        z-index: 100; }
+  @keyframes zoom {
+    0% {
+      transform: scale(0); }
+    100% {
+      transform: scale(100%); } }
+    header .visitor .cart {
+      position: relative;
+      right: 30px;
+      float: right; }
+    header .navbar-form {
+      width: 100%; }
+      header .navbar-form .search-content input {
+        width: 100%;
+        height: 40px; }
+      header .navbar-form .search-content button {
+        top: 0;
+        right: 0;
+        position: absolute;
+        height: 85%;
+        font-size: 15px;
+        width: 3.3em;
+        border-radius: 3px;
+        margin: 3px 18px;
+        background-color: #1a75ce;
+        color: #ffffff;
+        border: 0; }
+    header .navbar-brand > img {
+      margin: 0 30px; }
+  section .cart-top, section .list-product, section .freight, section .finish {
+    margin-bottom: 0;
+    padding: 15px; }
+  section .list-product, section .freight, section .checkout, section .finish {
+    margin: 0 -15px; }
+  section .bg-section {
+    background-color: #ffffff; }
+    section .bg-section .freight .freight-box {
+      border: 1px solid #ddd;
+      margin: 0 0 0 15px;
+      padding: 20px; }
+      section .bg-section .freight .freight-box .freight-search input {
+        height: 40px; }
+    section .bg-section .checkout .checkout-box {
+      margin: 15px 30px 0 0;
+      background-color: #f6f6f6; } }

@@ -5,6 +5,10 @@
   padding: $space-sm $space-sm;
 }
 
+%padding-md {
+  padding: $space-md $space-md;
+}
+
 %margin-xs {
   margin: $space-xs $space-xs;
 }
@@ -15,7 +19,7 @@
 
 %margin-block--mobile {
   background-color: $white;
-  margin: 25px 0px 25px 0px;
+  margin: $space-sm 0 ;
 }
 
 %link {

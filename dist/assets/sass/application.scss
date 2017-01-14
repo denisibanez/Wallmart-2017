@@ -1,12 +1,11 @@
 // variables
+@import "base/normalize";
 @import "base/_pallete";
 @import "base/_variables";
-
 
 //utilities
 @import "utilities/placeholder";
 @import "utilities/button";
-@import "utilities/normalize";
 @import "utilities/replace";
 
 //base
@@ -14,3 +13,6 @@
 
 //modules
 @import "modules/cart";
+
+//layout
+@import "layout/media";

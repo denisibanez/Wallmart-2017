@@ -31,3 +31,6 @@
 
 .nav > li {
   background-color: #195d9e; }
+
+.table > tbody > tr > td {
+  border-top: 0; }
