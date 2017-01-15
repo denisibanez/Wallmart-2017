@@ -4,10 +4,6 @@ section .cart-top .cart-top--title, section .cart-top .cart-top--button, section
 section .list-product .table-responsive .table .thumb {
   margin: 5px 5px; }
 
-section .list-product, section .freight, section .checkout {
-  background-color: #ffffff;
-  margin: 15px 0; }
-
 section .list-product .table-responsive .table tr td p a, section .freight .freight-box .freight-search a, section .checkout .checkout-box .checkout-box--info a {
   font-size: 1.5rem;
   color: #1a75ce;
@@ -28,49 +24,57 @@ section .cart-top {
     border-bottom: 3px solid #37af22;
     padding: 10px 25px; }
 
-section .list-product .table-responsive {
-  border: 1px solid #1a75ce;
-  margin-top: 15px; }
-  section .list-product .table-responsive .table {
-    margin-bottom: 0; }
-    section .list-product .table-responsive .table .table-caption {
-      background-color: #1a75ce;
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 1.5rem;
-      text-align: center; }
-      section .list-product .table-responsive .table .table-caption td:first-child {
-        text-align: left; }
-    section .list-product .table-responsive .table .thumb {
-      width: 60px; }
-    section .list-product .table-responsive .table tr {
-      border-bottom: 1px solid #1a75ce; }
-      section .list-product .table-responsive .table tr:last-child {
-        border-bottom: 0; }
-      section .list-product .table-responsive .table tr td {
-        vertical-align: middle;
-        border: 0; }
-        section .list-product .table-responsive .table tr td .table-responsive--text {
-          color: #1a75ce;
-          font-size: 2rem; }
-        section .list-product .table-responsive .table tr td p {
-          text-align: center; }
-
-section .freight .freight-box .freight-box--text {
-  font-size: 1.5rem; }
-
-section .freight .freight-box .freight-search {
-  padding: 15px 0; }
-  section .freight .freight-box .freight-search input {
+section .list-product {
+  background-color: #ffffff; }
+  section .list-product .table-responsive {
     border: 1px solid #1a75ce;
-    height: 50px;
-    border-radius: 0; }
+    margin-top: 15px; }
+    section .list-product .table-responsive .table {
+      margin-bottom: 0; }
+      section .list-product .table-responsive .table .table-caption {
+        background-color: #1a75ce;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center; }
+        section .list-product .table-responsive .table .table-caption td:first-child {
+          text-align: left; }
+      section .list-product .table-responsive .table .thumb {
+        width: 60px; }
+      section .list-product .table-responsive .table tr {
+        border-bottom: 1px solid #1a75ce; }
+        section .list-product .table-responsive .table tr:last-child {
+          border-bottom: 0; }
+        section .list-product .table-responsive .table tr td {
+          vertical-align: middle;
+          border: 0; }
+          section .list-product .table-responsive .table tr td .table-responsive--text {
+            color: #1a75ce;
+            font-size: 2rem; }
+          section .list-product .table-responsive .table tr td p {
+            text-align: center; }
 
-section .freight .freight-box .freight-notification {
-  font-size: 1.5rem; }
+section .bg-section {
+  background-color: #ffffff; }
 
-section .checkout .checkout-box tfoot {
-  color: #1a75ce; }
+section .freight {
+  margin-bottom: 15px; }
+  section .freight .freight-box .freight-box--text {
+    font-size: 1.5rem; }
+  section .freight .freight-box .freight-search {
+    padding: 15px 0; }
+    section .freight .freight-box .freight-search input {
+      border: 1px solid #1a75ce;
+      height: 50px;
+      border-radius: 0; }
+  section .freight .freight-box .freight-notification {
+    font-size: 1.5rem; }
+
+section .checkout {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  section .checkout .checkout-box tfoot {
+    color: #1a75ce; }
 
 section .finish {
   margin-top: 20px;

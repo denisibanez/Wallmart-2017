@@ -25,7 +25,8 @@ html {
 body {
   margin: 0;
   font-size: 16px;
-  color: #666; }
+  color: #666;
+  overflow-x: hidden; }
 
 /**
  * Add the correct display in IE 9-.
@@ -397,3 +398,6 @@ template {
  */
 [hidden] {
   display: none; }
+
+ul {
+  list-style: none; }

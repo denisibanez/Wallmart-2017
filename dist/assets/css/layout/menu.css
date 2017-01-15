@@ -1,0 +1,78 @@
+.btn {
+  border-radius: 0;
+  color: #ffffff; }
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#wrapper.toggled {
+  padding-left: 250px; }
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #1a75ce;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px; }
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px; }
+  #page-content-wrapper .toggle-content {
+    background-color: #ffffff;
+    padding: 15px 15px;
+    width: 100%;
+    margin: 15px 0px; }
+    #page-content-wrapper .toggle-content .btn-buy {
+      background-color: #40cd28;
+      border-bottom: 3px solid #37af22;
+      padding: 10px 15px;
+      font-size: 2rem;
+      margin-right: 15px; }
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px; }
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px; }
+    .sidebar-nav li a {
+      display: block;
+      text-decoration: none;
+      color: #ffffff; }
+      .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: #fff;
+        background: #195d9e; }
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none; }
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px; }

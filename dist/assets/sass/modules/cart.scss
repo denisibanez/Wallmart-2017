@@ -24,7 +24,7 @@ section {
   }
 
   .list-product {
-    @extend %margin-block--mobile;
+    background-color: $white;
 
     .table-responsive {
       border: 1px solid $blue-header;
@@ -81,8 +81,12 @@ section {
     }
   }
 
+  .bg-section {
+    background-color: $white;
+  }
+
   .freight {
-    @extend %margin-block--mobile;
+    margin-bottom: $space-sm;
 
     .freight-box {
       @extend %padding-sm;
@@ -112,7 +116,8 @@ section {
   }
 
   .checkout {
-    @extend %margin-block--mobile;
+    margin-top: $space-sm;
+    margin-bottom: $space-sm;
 
     .checkout-box {
       @extend %padding-sm;

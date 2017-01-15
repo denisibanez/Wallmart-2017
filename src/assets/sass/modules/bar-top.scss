@@ -1,0 +1,7 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+@import "../utilities/_mixins";
+
+.menu-user {
+  @include menu;
+}

@@ -4,15 +4,20 @@
 @import "base/_variables";
 
 //utilities
-@import "utilities/placeholder";
-@import "utilities/button";
+@import "utilities/_placeholder";
+@import "utilities/_mixins";
+@import "utilities/_button";
 @import "utilities/replace";
 
 //base
 @import "base/base";
 
-//modules
-@import "modules/cart";
-
 //layout
 @import "layout/media";
+@import "layout/menu";
+@import "layout/header";
+
+//modules
+@import "modules/cart";
+@import "modules/bar-top";
+@import "modules/bar-social";

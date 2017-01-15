@@ -1,0 +1,18 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+@import "../utilities/_mixins";
+
+.social-bar {
+  @include menu(15px, 0px);
+  ul {
+    position: relative;
+    right: $space-sm;
+    li {
+      a {
+        .icon {
+          font-size:0.4px;
+        }
+      }
+    }
+  }
+}

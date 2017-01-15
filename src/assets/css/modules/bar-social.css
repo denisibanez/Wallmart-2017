@@ -1,0 +1,16 @@
+.social-bar ul {
+  margin-bottom: 0; }
+  .social-bar ul li {
+    display: inline; }
+    .social-bar ul li a {
+      padding: 15px 0px;
+      display: inline-block;
+      color: #666666;
+      text-decoration: none;
+      vertical-align: middle; }
+
+.social-bar ul {
+  position: relative;
+  right: 15px; }
+  .social-bar ul li a .icon {
+    font-size: 0.4px; }

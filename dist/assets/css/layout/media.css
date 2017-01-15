@@ -9,7 +9,8 @@
         color: #ffffff;
         font-size: 1.2rem; }
     header .visitor .cart-icon {
-      position: relative; }
+      position: relative;
+      left: 15px; }
       header .visitor .cart-icon a .cart-icon--notification {
         background-color: #40cd28;
         width: 25px;
@@ -35,6 +36,8 @@
       position: relative;
       right: 30px;
       float: right; }
+    header .navbar-default {
+      height: 50px; }
     header .navbar-form {
       width: 100%; }
       header .navbar-form .search-content input {
@@ -69,4 +72,33 @@
         height: 40px; }
     section .bg-section .checkout .checkout-box {
       margin: 15px 30px 0 0;
-      background-color: #f6f6f6; } }
+      background-color: #f6f6f6; }
+  #wrapper {
+    padding-left: 250px; }
+    #wrapper .toggled {
+      padding-left: 0; }
+  #sidebar-wrapper {
+    width: 250px; }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0; }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative; }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0; } }
+
+@media (min-width: 991px) {
+  header {
+    height: 125px; }
+    header .navbar-form {
+      width: 50%;
+      position: relative;
+      bottom: 50px; }
+    header .visitor .pull-left {
+      position: relative;
+      left: 100px; } }
+
+@media (min-width: 1200px) {
+  .visitor .pull-left {
+    left: 175px; } }

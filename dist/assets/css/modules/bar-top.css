@@ -1,0 +1,10 @@
+.menu-user ul {
+  margin-bottom: 0; }
+  .menu-user ul li {
+    display: inline; }
+    .menu-user ul li a {
+      padding: 15px 10px;
+      display: inline-block;
+      color: #666666;
+      text-decoration: none;
+      vertical-align: middle; }

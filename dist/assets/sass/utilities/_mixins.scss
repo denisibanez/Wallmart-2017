@@ -1,0 +1,18 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+
+@mixin menu($space-1:15px, $space-2:10px) {
+  ul {
+    margin-bottom: 0;
+    li {
+      display: inline;
+      a {
+        padding: $space-1 $space-2;
+        display: inline-block;
+        color:$gray-font;
+        text-decoration: none;
+        vertical-align: middle;
+      }
+    }
+  }
+}
