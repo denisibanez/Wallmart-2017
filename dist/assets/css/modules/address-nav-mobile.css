@@ -1,0 +1,40 @@
+.navigation-user {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .navigation-user span {
+    color: #000000;
+    padding-left: 15px; }
+  .navigation-user a {
+    padding-right: 15px; }
+  .navigation-user .well {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0; }
+    .navigation-user .well .navigation-user--caption {
+      height: 50px;
+      padding: 15px; }
+      .navigation-user .well .navigation-user--caption .cicle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #cccccc;
+        padding: 13px 0; }
+        .navigation-user .well .navigation-user--caption .cicle .user-icon {
+          color: #ffffff;
+          font-size: 2rem; }
+    .navigation-user .well ul {
+      padding-top: 15px; }
+      .navigation-user .well ul li {
+        border-top: 1px solid #ddd; }
+        .navigation-user .well ul li a {
+          line-height: 50px;
+          padding-left: 15px;
+          color: #666666; }
+
+.profile-name .profile-name--item {
+  display: table-cell;
+  vertical-align: middle;
+  height: 55px; }

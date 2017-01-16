@@ -6,9 +6,14 @@
   header {
     background-color: $blue-header;
     height: 200px;
-    padding:$space-md $space-sm;
+    padding:20px $space-sm;
 
     .visitor {
+      .media {
+        position: relative;
+        top:10px;
+      }
+
       p {
         color: $white;
 
@@ -30,7 +35,7 @@
             border-radius: 50%;
             color: $white;
             position: absolute;
-            right: 15px;
+            right: $space-sm;
             padding:2px 8px;
             font-size: $font-md;
             /* this section calls the dropHeader animation we defined above */
@@ -59,7 +64,7 @@
     }
 
     .navbar-default {
-        height: $space-lg;
+      height: $space-lg;
     }
 
     .navbar-form {
@@ -153,11 +158,59 @@
     position: relative;
     margin-right: 0;
   }
+
+  .navigation-user {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .well {
+      margin-bottom: -9999px;
+      padding-bottom: 9999px;
+      overflow: hidden;
+      overflow-x: hidden;
+      z-index: 100;
+
+      .profile-name {
+        .profile-name--item {
+          text-align: center;
+
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .navigation-user--caption {
+      .cicle-content {
+        margin: 0 auto;
+        width: 50%;
+      }
+    }
+
+    .content-address {
+      background-color: transparent;
+      margin-bottom: -9999px;
+      padding-bottom: 9999px;
+      overflow: hidden;
+      overflow-x: hidden;
+      z-index: 100;
+
+      .content-address--bg {
+        background-color: $white;
+        margin-top: $space-md;
+
+        .content-address--title {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 991px) {
   header {
-    height: 125px;
+    height: 110px;
 
     .navbar-form {
       width: 50%;
@@ -169,6 +222,41 @@
       .pull-left {
         position: relative;
         left:$space-xl;
+      }
+    }
+  }
+  .navigation-user {
+    .navigation-user--caption {
+      .cicle-content {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
+    .well {
+      .profile-name {
+        .profile-name--item {
+          text-align: left;
+        }
+      }
+    }
+
+    .content-address {
+      .content-address--bg {
+        .content-address--display {
+          display: flex;
+
+          .card {
+            width: 190px;
+            display: inline-block;
+            flex-basis: 190px;
+            flex-grow: 1;
+          }
+        }
+
+        .content-address--title {
+          font-size: $space-md;
+        }
       }
     }
   }

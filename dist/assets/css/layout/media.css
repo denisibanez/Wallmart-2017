@@ -2,7 +2,10 @@
   header {
     background-color: #1a75ce;
     height: 200px;
-    padding: 30px 15px; }
+    padding: 20px 15px; }
+    header .visitor .media {
+      position: relative;
+      top: 10px; }
     header .visitor p {
       color: #ffffff; }
       header .visitor p a {
@@ -86,18 +89,57 @@
     position: relative; }
   #wrapper.toggled #page-content-wrapper {
     position: relative;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .navigation-user {
+    padding-top: 0;
+    padding-bottom: 0; }
+    .navigation-user .well {
+      margin-bottom: -9999px;
+      padding-bottom: 9999px;
+      overflow: hidden;
+      overflow-x: hidden;
+      z-index: 100; }
+      .navigation-user .well .profile-name .profile-name--item {
+        text-align: center; }
+        .navigation-user .well .profile-name .profile-name--item a {
+          display: block; }
+    .navigation-user .navigation-user--caption .cicle-content {
+      margin: 0 auto;
+      width: 50%; }
+    .navigation-user .content-address {
+      background-color: transparent;
+      margin-bottom: -9999px;
+      padding-bottom: 9999px;
+      overflow: hidden;
+      overflow-x: hidden;
+      z-index: 100; }
+      .navigation-user .content-address .content-address--bg {
+        background-color: #ffffff;
+        margin-top: 30px; }
+        .navigation-user .content-address .content-address--bg .content-address--title {
+          padding: 0 20px; } }
 
 @media (min-width: 991px) {
   header {
-    height: 125px; }
+    height: 110px; }
     header .navbar-form {
       width: 50%;
       position: relative;
       bottom: 50px; }
     header .visitor .pull-left {
       position: relative;
-      left: 100px; } }
+      left: 100px; }
+  .navigation-user .navigation-user--caption .cicle-content {
+    margin: 0 auto;
+    width: 100%; }
+  .navigation-user .well .profile-name .profile-name--item {
+    text-align: left; }
+  .navigation-user .content-address .content-address--bg .content-address--display {
+    display: flex; }
+    .navigation-user .content-address .content-address--bg .content-address--display .card {
+      flex-grow: 1; }
+    .navigation-user .content-address .content-address--bg .content-address--display .content-address--title {
+      font-size: 30px; } }
 
 @media (min-width: 1200px) {
   .visitor .pull-left {

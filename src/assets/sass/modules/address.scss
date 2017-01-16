@@ -1,0 +1,95 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+@import "../utilities/_mixins";
+@import "../utilities/_placeholder";
+
+%card-box {
+  border: 1px solid $blue-header;
+  padding: $space-sm;
+  color: $blue-header;
+}
+.content-address {
+  background-color: $white;
+
+  .content-address--bg {
+    padding: $space-sm 0;
+    margin-top: $space-md;
+
+    .card-box {
+      @extend %card-box;
+      margin: 20px 20px 0 20px;
+
+      .card-box--wrap {
+        font-size:$font-md;
+
+        .card-box--caption {
+          margin-bottom: $space-sm;
+
+          .card-buttons {
+            span {
+              color: $blue-header;
+
+              &:hover {
+                color: $blue-header;
+              }
+            }
+          }
+        }
+
+        .card-box--address {
+          p {
+            padding: 0;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+
+    .card-box--footer {
+      @extend %card-box;
+      margin: 0 20px;
+      border-top: 0;
+
+      .control.control--radio {
+        font-size: $font-md;
+        input {
+          margin-left: $space-sm;
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+        }
+      }
+    }
+
+    .card-include {
+      border: 2px dashed $gray-dash;
+      height: 250px;
+      margin: 20px;
+
+      .card-include--item {
+        margin: auto;
+        width: 150px;
+        text-align: center;
+
+        .card-include--icon {
+          display: table-cell;
+          vertical-align: middle;
+          height: 250px;
+          width: 150px;
+          color: $blue-header;
+
+          span {
+            color: $white;
+            background-color: $blue-header;
+            width: $space-lg;
+            height: $space-lg;
+            border-radius: 50%;
+            font-size: $font-lg;
+            font-weight: lighter;
+            padding: 14px 10px;
+          }
+        }
+      }
+    }
+  }
+}

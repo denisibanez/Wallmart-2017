@@ -1,0 +1,79 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+@import "../utilities/_mixins";
+@import "../utilities/_placeholder";
+
+.navigation-user {
+  padding-top: $space-md;
+  padding-bottom: $space-md;
+
+  span {
+    color:$black;
+    padding-left: $space-sm;
+  }
+
+  a.arrow {
+    padding-right: $space-sm;
+  }
+
+  .well  {
+    @extend %well;
+
+    .navigation-user--caption {
+      height: $space-lg;
+      padding: $space-sm;
+      margin: -15px;
+
+
+      .cicle {
+        width: $space-lg;
+        height:$space-lg;
+        border-radius: 50%;
+        background-color: $gray;
+        padding: 13px 0;
+
+        .user-icon {
+          color:$white;
+          font-size:$font-lg;
+        }
+      }
+    }
+
+    ul {
+      padding-top: $space-sm;
+      margin: -19px;
+
+      li {
+        border-top: 1px solid $gray-border;
+
+        &.active {
+          border-left: 4px solid $blue-header;
+        }
+
+        a {
+          line-height: $space-lg;
+          padding-left: $space-sm;
+          color: $gray-font;
+
+          &:hover {
+            background-color: $blue-header;
+            color:$white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.profile-name {
+  .profile-name--item {
+    display: table-cell;
+    vertical-align: middle;
+    height: 55px;
+
+    a {
+      display: block;
+    }
+  }
+}

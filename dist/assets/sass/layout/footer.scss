@@ -1,0 +1,55 @@
+@import "../base/_pallete";
+@import "../base/_variables";
+@import "../utilities/_mixins";
+@import "../utilities/_placeholder";
+
+footer {
+  background-color: $blue-header;
+  color: $white;
+  height: $space-xl;
+  z-index: 9999;
+  position: relative;
+
+  .footer-content {
+    padding-top: 20px;
+
+    p {
+      padding: $space-sm;
+      font-size: 1.8rem;
+    }
+
+    span {
+      padding-right: $space-sm;
+      color: $white;
+      font-size: $font-xl;
+    }
+
+    .well {
+      @extend %well;
+      height:200px;
+
+      .info {
+        ul {
+          padding-left: $space-sm;
+          padding-right: $space-sm;
+
+          li {
+            padding:$space-sm;
+            text-align: center;
+            font-size: $font-lg;
+
+            &:first-child {
+              border-bottom: 1px solid $gray-font;
+            }
+
+            a {
+              span {
+                color: $blue-header;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

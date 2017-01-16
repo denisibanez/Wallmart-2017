@@ -1,0 +1,56 @@
+.content-address .content-address--bg .card-box, .content-address .content-address--bg .card-box--footer {
+  border: 1px solid #1a75ce;
+  padding: 15px;
+  color: #1a75ce; }
+
+.content-address {
+  background-color: #ffffff; }
+  .content-address .content-address--bg {
+    padding: 15px 0;
+    margin-top: 30px; }
+    .content-address .content-address--bg .card-box {
+      margin: 20px 20px 0 20px; }
+      .content-address .content-address--bg .card-box .card-box--wrap {
+        font-size: 1.5rem; }
+        .content-address .content-address--bg .card-box .card-box--wrap .card-box--caption {
+          margin-bottom: 15px; }
+          .content-address .content-address--bg .card-box .card-box--wrap .card-box--caption .card-buttons span {
+            color: #1a75ce; }
+            .content-address .content-address--bg .card-box .card-box--wrap .card-box--caption .card-buttons span:hover {
+              color: #1a75ce; }
+        .content-address .content-address--bg .card-box .card-box--wrap .card-box--address p {
+          padding: 0;
+          line-height: 12px; }
+    .content-address .content-address--bg .card-box--footer {
+      margin: 0 20px;
+      border-top: 0; }
+      .content-address .content-address--bg .card-box--footer .control.control--radio {
+        font-size: 1.5rem; }
+        .content-address .content-address--bg .card-box--footer .control.control--radio input {
+          margin-left: 15px;
+          position: absolute;
+          z-index: -1;
+          opacity: 0; }
+    .content-address .content-address--bg .card-include {
+      border: 2px dashed #e5e5e5;
+      height: 250px;
+      margin: 20px; }
+      .content-address .content-address--bg .card-include .card-include--item {
+        margin: auto;
+        width: 150px;
+        text-align: center; }
+        .content-address .content-address--bg .card-include .card-include--item .card-include--icon {
+          display: table-cell;
+          vertical-align: middle;
+          height: 250px;
+          width: 150px;
+          color: #1a75ce; }
+          .content-address .content-address--bg .card-include .card-include--item .card-include--icon span {
+            color: #ffffff;
+            background-color: #1a75ce;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 2rem;
+            font-weight: lighter;
+            padding: 14px 10px; }
