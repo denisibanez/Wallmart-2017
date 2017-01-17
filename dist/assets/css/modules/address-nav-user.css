@@ -35,8 +35,7 @@
       .navigation-user .well ul li a {
         line-height: 50px;
         padding-left: 15px;
-        color: #666666;
-        display: block; }
+        color: #666666; }
         .navigation-user .well ul li a:hover {
           background-color: #1a75ce;
           color: #ffffff;
@@ -46,3 +45,5 @@
   display: table-cell;
   vertical-align: middle;
   height: 55px; }
+  .profile-name .profile-name--item a {
+    display: block; }

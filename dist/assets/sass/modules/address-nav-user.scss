@@ -54,7 +54,6 @@
           line-height: $space-lg;
           padding-left: $space-sm;
           color: $gray-font;
-          display: block;
 
           &:hover {
             background-color: $blue-header;
@@ -72,5 +71,9 @@
     display: table-cell;
     vertical-align: middle;
     height: 55px;
+
+    a {
+      display: block;
+    }
   }
 }

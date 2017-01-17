@@ -190,20 +190,26 @@
 
     .content-address {
       background-color: transparent;
-      margin-bottom: -9999px;
-      padding-bottom: 9999px;
-      overflow: hidden;
-      overflow-x: hidden;
-      z-index: 100;
 
       .content-address--bg {
         background-color: $white;
         margin-top: $space-md;
+        margin-bottom: -9999px;
+        padding-bottom: 9999px;
+        overflow: hidden;
+        overflow-x: hidden;
+        z-index: 100;
 
         .content-address--title {
           padding: 0 20px;
         }
       }
+    }
+  }
+
+  footer {
+    .footer-content {
+      text-align: center;
     }
   }
 }
@@ -245,11 +251,12 @@
       .content-address--bg {
         .content-address--display {
           display: flex;
+          flex-wrap: wrap;
 
           .card {
-            width: 190px;
+            width: 345px;
             display: inline-block;
-            flex-basis: 190px;
+            flex-basis: 345px;
             flex-grow: 1;
           }
         }
@@ -266,6 +273,24 @@
   .visitor {
     .pull-left {
       left:175px;
+    }
+  }
+
+  .navigation-user{
+    .content-address {
+      .content-address--bg {
+        .content-address--display {
+          display: flex;
+          flex-wrap: wrap;
+
+          .card {
+            width: 420px;
+            display: inline-block;
+            flex-basis: 420px;
+            flex-grow: 1;
+          }
+        }
+      }
     }
   }
 }

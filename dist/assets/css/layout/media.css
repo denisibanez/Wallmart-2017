@@ -107,17 +107,19 @@
       margin: 0 auto;
       width: 50%; }
     .navigation-user .content-address {
-      background-color: transparent;
-      margin-bottom: -9999px;
-      padding-bottom: 9999px;
-      overflow: hidden;
-      overflow-x: hidden;
-      z-index: 100; }
+      background-color: transparent; }
       .navigation-user .content-address .content-address--bg {
         background-color: #ffffff;
-        margin-top: 30px; }
+        margin-top: 30px;
+        margin-bottom: -9999px;
+        padding-bottom: 9999px;
+        overflow: hidden;
+        overflow-x: hidden;
+        z-index: 100; }
         .navigation-user .content-address .content-address--bg .content-address--title {
-          padding: 0 20px; } }
+          padding: 0 20px; }
+  footer .footer-content {
+    text-align: center; } }
 
 @media (min-width: 991px) {
   header {
@@ -135,12 +137,24 @@
   .navigation-user .well .profile-name .profile-name--item {
     text-align: left; }
   .navigation-user .content-address .content-address--bg .content-address--display {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     .navigation-user .content-address .content-address--bg .content-address--display .card {
+      width: 345px;
+      display: inline-block;
+      flex-basis: 345px;
       flex-grow: 1; }
-    .navigation-user .content-address .content-address--bg .content-address--display .content-address--title {
-      font-size: 30px; } }
+  .navigation-user .content-address .content-address--bg .content-address--title {
+    font-size: 30px; } }
 
 @media (min-width: 1200px) {
   .visitor .pull-left {
-    left: 175px; } }
+    left: 175px; }
+  .navigation-user .content-address .content-address--bg .content-address--display {
+    display: flex;
+    flex-wrap: wrap; }
+    .navigation-user .content-address .content-address--bg .content-address--display .card {
+      width: 420px;
+      display: inline-block;
+      flex-basis: 420px;
+      flex-grow: 1; } }

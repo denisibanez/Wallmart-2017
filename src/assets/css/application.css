@@ -562,34 +562,6 @@ section .finish {
       padding: 10px 25px;
       width: 100%; }
 
-.menu-user ul {
-  margin-bottom: 0; }
-  .menu-user ul li {
-    display: inline; }
-    .menu-user ul li a {
-      padding: 15px 10px;
-      display: inline-block;
-      color: #666666;
-      text-decoration: none;
-      vertical-align: middle; }
-
-.social-bar ul {
-  margin-bottom: 0; }
-  .social-bar ul li {
-    display: inline; }
-    .social-bar ul li a {
-      padding: 15px 0px;
-      display: inline-block;
-      color: #666666;
-      text-decoration: none;
-      vertical-align: middle; }
-
-.social-bar ul {
-  position: relative;
-  right: 15px; }
-  .social-bar ul li a .icon {
-    font-size: 0.4px; }
-
 section .cart-top .cart-top--title, section .cart-top .cart-top--button, section .freight .freight-box, section .checkout .checkout-box {
   padding: 15px 15px; }
 
@@ -663,6 +635,34 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
             font-size: 2rem;
             font-weight: lighter;
             padding: 14px 10px; }
+
+.social-bar ul {
+  margin-bottom: 0; }
+  .social-bar ul li {
+    display: inline; }
+    .social-bar ul li a {
+      padding: 15px 0px;
+      display: inline-block;
+      color: #666666;
+      text-decoration: none;
+      vertical-align: middle; }
+
+.social-bar ul {
+  position: relative;
+  right: 15px; }
+  .social-bar ul li a .icon {
+    font-size: 0.4px; }
+
+.menu-user ul {
+  margin-bottom: 0; }
+  .menu-user ul li {
+    display: inline; }
+    .menu-user ul li a {
+      padding: 15px 10px;
+      display: inline-block;
+      color: #666666;
+      text-decoration: none;
+      vertical-align: middle; }
 
 section .cart-top .cart-top--title, section .cart-top .cart-top--button, section .freight .freight-box, section .checkout .checkout-box {
   padding: 15px 15px; }

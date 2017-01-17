@@ -14,9 +14,9 @@
 
 //modules
 @import "modules/cart";
-@import "modules/bar-top";
-@import "modules/bar-social";
 @import "modules/address";
+@import "modules/bar-social";
+@import "modules/bar-top";
 @import "modules/address-nav-user";
 
 //states
@@ -25,5 +25,4 @@
 //layout
 @import "layout/media";
 @import "layout/menu";
-@import "layout/header";
 @import "layout/footer";

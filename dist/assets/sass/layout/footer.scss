@@ -24,27 +24,32 @@ footer {
       font-size: $font-xl;
     }
 
-    .well {
-      @extend %well;
-      height:200px;
+    .collapse.in {
+      background-color: $white;
+      height: 280px;
 
-      .info {
-        ul {
-          padding-left: $space-sm;
-          padding-right: $space-sm;
+      .well {
+        @extend %well;
+        height:260px;
 
-          li {
-            padding:$space-sm;
-            text-align: center;
-            font-size: $font-lg;
+        .info {
+          ul {
+            padding-left: $space-sm;
+            padding-right: $space-sm;
 
-            &:first-child {
-              border-bottom: 1px solid $gray-font;
-            }
+            li {
+              padding:$space-sm;
+              text-align: center;
+              font-size: $font-lg;
 
-            a {
-              span {
-                color: $blue-header;
+              &:first-child {
+                border-bottom: 1px solid $gray-font;
+              }
+
+              a {
+                span {
+                  color: $blue-header;
+                }
               }
             }
           }

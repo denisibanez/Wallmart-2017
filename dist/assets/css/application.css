@@ -414,7 +414,7 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
   color: #1a75ce;
   text-decoration: underline; }
 
-.navigation-user .well, footer .footer-content .well {
+.navigation-user .well, footer .footer-content .collapse.in .well {
   background-color: #ffffff;
   border: 0;
   border-radius: 0;
@@ -478,7 +478,7 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
   color: #1a75ce;
   text-decoration: underline; }
 
-.navigation-user .well, footer .footer-content .well {
+.navigation-user .well, footer .footer-content .collapse.in .well {
   background-color: #ffffff;
   border: 0;
   border-radius: 0;
@@ -562,34 +562,6 @@ section .finish {
       padding: 10px 25px;
       width: 100%; }
 
-.menu-user ul {
-  margin-bottom: 0; }
-  .menu-user ul li {
-    display: inline; }
-    .menu-user ul li a {
-      padding: 15px 10px;
-      display: inline-block;
-      color: #666666;
-      text-decoration: none;
-      vertical-align: middle; }
-
-.social-bar ul {
-  margin-bottom: 0; }
-  .social-bar ul li {
-    display: inline; }
-    .social-bar ul li a {
-      padding: 15px 0px;
-      display: inline-block;
-      color: #666666;
-      text-decoration: none;
-      vertical-align: middle; }
-
-.social-bar ul {
-  position: relative;
-  right: 15px; }
-  .social-bar ul li a .icon {
-    font-size: 0.4px; }
-
 section .cart-top .cart-top--title, section .cart-top .cart-top--button, section .freight .freight-box, section .checkout .checkout-box {
   padding: 15px 15px; }
 
@@ -601,7 +573,7 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
   color: #1a75ce;
   text-decoration: underline; }
 
-.navigation-user .well, footer .footer-content .well {
+.navigation-user .well, footer .footer-content .collapse.in .well {
   background-color: #ffffff;
   border: 0;
   border-radius: 0;
@@ -664,6 +636,34 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
             font-weight: lighter;
             padding: 14px 10px; }
 
+.social-bar ul {
+  margin-bottom: 0; }
+  .social-bar ul li {
+    display: inline; }
+    .social-bar ul li a {
+      padding: 15px 0px;
+      display: inline-block;
+      color: #666666;
+      text-decoration: none;
+      vertical-align: middle; }
+
+.social-bar ul {
+  position: relative;
+  right: 15px; }
+  .social-bar ul li a .icon {
+    font-size: 0.4px; }
+
+.menu-user ul {
+  margin-bottom: 0; }
+  .menu-user ul li {
+    display: inline; }
+    .menu-user ul li a {
+      padding: 15px 10px;
+      display: inline-block;
+      color: #666666;
+      text-decoration: none;
+      vertical-align: middle; }
+
 section .cart-top .cart-top--title, section .cart-top .cart-top--button, section .freight .freight-box, section .checkout .checkout-box {
   padding: 15px 15px; }
 
@@ -675,7 +675,7 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
   color: #1a75ce;
   text-decoration: underline; }
 
-.navigation-user .well, footer .footer-content .well {
+.navigation-user .well, footer .footer-content .collapse.in .well {
   background-color: #ffffff;
   border: 0;
   border-radius: 0;
@@ -712,8 +712,7 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
       .navigation-user .well ul li a {
         line-height: 50px;
         padding-left: 15px;
-        color: #666666;
-        display: block; }
+        color: #666666; }
         .navigation-user .well ul li a:hover {
           background-color: #1a75ce;
           color: #ffffff;
@@ -723,6 +722,8 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
   display: table-cell;
   vertical-align: middle;
   height: 55px; }
+  .profile-name .profile-name--item a {
+    display: block; }
 
 input[type="radio"] {
   display: none; }
@@ -864,17 +865,19 @@ input[type=radio]:checked + label:before {
       margin: 0 auto;
       width: 50%; }
     .navigation-user .content-address {
-      background-color: transparent;
-      margin-bottom: -9999px;
-      padding-bottom: 9999px;
-      overflow: hidden;
-      overflow-x: hidden;
-      z-index: 100; }
+      background-color: transparent; }
       .navigation-user .content-address .content-address--bg {
         background-color: #ffffff;
-        margin-top: 30px; }
+        margin-top: 30px;
+        margin-bottom: -9999px;
+        padding-bottom: 9999px;
+        overflow: hidden;
+        overflow-x: hidden;
+        z-index: 100; }
         .navigation-user .content-address .content-address--bg .content-address--title {
-          padding: 0 20px; } }
+          padding: 0 20px; }
+  footer .footer-content {
+    text-align: center; } }
 
 @media (min-width: 991px) {
   header {
@@ -892,15 +895,27 @@ input[type=radio]:checked + label:before {
   .navigation-user .well .profile-name .profile-name--item {
     text-align: left; }
   .navigation-user .content-address .content-address--bg .content-address--display {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     .navigation-user .content-address .content-address--bg .content-address--display .card {
+      width: 345px;
+      display: inline-block;
+      flex-basis: 345px;
       flex-grow: 1; }
-    .navigation-user .content-address .content-address--bg .content-address--display .content-address--title {
-      font-size: 30px; } }
+  .navigation-user .content-address .content-address--bg .content-address--title {
+    font-size: 30px; } }
 
 @media (min-width: 1200px) {
   .visitor .pull-left {
-    left: 175px; } }
+    left: 175px; }
+  .navigation-user .content-address .content-address--bg .content-address--display {
+    display: flex;
+    flex-wrap: wrap; }
+    .navigation-user .content-address .content-address--bg .content-address--display .card {
+      width: 420px;
+      display: inline-block;
+      flex-basis: 420px;
+      flex-grow: 1; } }
 
 .btn {
   border-radius: 0;
@@ -996,7 +1011,7 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
   color: #1a75ce;
   text-decoration: underline; }
 
-.navigation-user .well, footer .footer-content .well {
+.navigation-user .well, footer .footer-content .collapse.in .well {
   background-color: #ffffff;
   border: 0;
   border-radius: 0;
@@ -1017,16 +1032,19 @@ footer {
       padding-right: 15px;
       color: #ffffff;
       font-size: 2.5rem; }
-    footer .footer-content .well {
-      height: 200px; }
-      footer .footer-content .well .info ul {
-        padding-left: 15px;
-        padding-right: 15px; }
-        footer .footer-content .well .info ul li {
-          padding: 15px;
-          text-align: center;
-          font-size: 2rem; }
-          footer .footer-content .well .info ul li:first-child {
-            border-bottom: 1px solid #666666; }
-          footer .footer-content .well .info ul li a span {
-            color: #1a75ce; }
+    footer .footer-content .collapse.in {
+      background-color: #ffffff;
+      height: 280px; }
+      footer .footer-content .collapse.in .well {
+        height: 260px; }
+        footer .footer-content .collapse.in .well .info ul {
+          padding-left: 15px;
+          padding-right: 15px; }
+          footer .footer-content .collapse.in .well .info ul li {
+            padding: 15px;
+            text-align: center;
+            font-size: 2rem; }
+            footer .footer-content .collapse.in .well .info ul li:first-child {
+              border-bottom: 1px solid #666666; }
+            footer .footer-content .collapse.in .well .info ul li a span {
+              color: #1a75ce; }
