@@ -707,6 +707,9 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
     margin: -19px; }
     .navigation-user .well ul li {
       border-top: 1px solid #ddd; }
+      .navigation-user .well ul li:hover {
+        background-color: #1a75ce;
+        text-decoration: none; }
       .navigation-user .well ul li.active {
         border-left: 4px solid #1a75ce; }
       .navigation-user .well ul li a {
@@ -714,9 +717,7 @@ section .list-product .table-responsive .table tr td p a, section .freight .frei
         padding-left: 15px;
         color: #666666; }
         .navigation-user .well ul li a:hover {
-          background-color: #1a75ce;
-          color: #ffffff;
-          text-decoration: none; }
+          color: #ffffff; }
 
 .profile-name .profile-name--item {
   display: table-cell;

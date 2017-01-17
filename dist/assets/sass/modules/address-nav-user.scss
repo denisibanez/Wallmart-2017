@@ -46,6 +46,12 @@
       li {
         border-top: 1px solid $gray-border;
 
+        &:hover {
+          background-color: $blue-header;
+          color:$white;
+          text-decoration: none;
+        }
+
         &.active {
           border-left: 4px solid $blue-header;
         }
@@ -54,12 +60,6 @@
           line-height: $space-lg;
           padding-left: $space-sm;
           color: $gray-font;
-
-          &:hover {
-            background-color: $blue-header;
-            color:$white;
-            text-decoration: none;
-          }
         }
       }
     }
